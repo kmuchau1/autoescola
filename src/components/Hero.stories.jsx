@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import CarImage from "../stories/assets/car.jpg";
 import RoadImage from "../stories/assets/road.jpg";
 import Heading from "./Heading";
+import Button from "./Button";
 
 export default {
   title: "Components|Hero",
@@ -32,5 +33,8 @@ export const withList = () => (
       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
       <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
     </ul>
+    <Button color="primary" variant="outlined">
+      Matricule-se agora
+    </Button>
   </Hero>
 );
