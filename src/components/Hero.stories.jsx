@@ -8,7 +8,7 @@ import Heading from "./Heading";
 import Button from "./Button";
 
 export default {
-  title: "Components|Hero",
+  title: "Components/Hero",
   component: Hero,
 };
 
