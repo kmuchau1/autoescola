@@ -13,7 +13,7 @@ const Content = styled.div`
       background-color: #f7f7f7;
     `}
 
-  ${breakAt(BreakpointSize.md)} {
+  ${breakAt(BreakpointSizes.md)} {
     padding: 80px 0;
   }
 
