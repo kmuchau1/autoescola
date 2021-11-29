@@ -1,5 +1,7 @@
 # Auto Escola
 
+![CircleCI](https://img.shields.io/circleci/build/gh/kmuchau1/autoescola)
+
 Projeto desenvolvido durante o curso.
 
 Resultado final:
