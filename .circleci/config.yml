@@ -1,0 +1,24 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.7.0
+  codecov: codecov/codecov@1.0.2
+
+jobs:
+  tests:
+    docker:
+      - image: circleci/node:16.13.0-browsers
+    steps:
+      - checkout
+      - run: node --version
+      - run: npm --version
+      - node/install-packages
+      - run: npm run lint
+      - run: npm run cover
+      - codecov/upload:
+          file: coverage/*.json
+
+workflows:
+  ci:
+    jobs:
+      - tests
