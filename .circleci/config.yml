@@ -12,7 +12,7 @@ jobs:
       - run: node --version
       - run: npm --version
       - node/install-packages
-      - run: lint
+      - run: npm run lint
 
 workflows:
   ci:
