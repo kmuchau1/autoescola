@@ -1,4 +1,4 @@
-# Auto Escola
+# Auto Escola da Karine
 
 ![CircleCI](https://img.shields.io/circleci/build/gh/kmuchau1/autoescola)
 ![Codecov](https://img.shields.io/codecov/c/github/kmuchau1/autoescola)
