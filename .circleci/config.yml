@@ -4,15 +4,17 @@ orbs:
   node: circleci/node@4.7.0
 
 jobs:
-  setup:
+  tests:
     docker:
       - image: circleci/node:16.13.0-browsers
     steps:
       - checkout
       - run: node --version
       - run: npm --version
+      - node/install-packages
+      - run: lint
 
 workflows:
   ci:
     jobs:
-      - setup
+      - tests
