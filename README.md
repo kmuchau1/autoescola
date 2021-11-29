@@ -1,6 +1,7 @@
 # Auto Escola
 
 ![CircleCI](https://img.shields.io/circleci/build/gh/kmuchau1/autoescola)
+![Codecov](https://img.shields.io/codecov/c/github/kmuchau1/autoescola)
 
 Projeto desenvolvido durante o curso.
 
