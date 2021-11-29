@@ -17,8 +17,21 @@ jobs:
       - run: npm run cover
       - codecov/upload:
           file: coverage/*.json
-
+  versioning:
+    docker:
+      - image: circleci/node:16.13.0-browsers
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version kmuchau1 autoescola
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: master
+            tags:
+              ignore: /.*/
