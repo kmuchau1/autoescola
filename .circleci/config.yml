@@ -10,15 +10,37 @@ jobs:
       - image: circleci/node:16.13.0-browsers
     steps:
       - checkout
-      - run: node --version
-      - run: npm --version
+      - run:
+          name: Show Node Version
+          command: node --version
+            npm --version
       - node/install-packages
-      - run: npm run lint
-      - run: npm run cover
+      - run:
+          name: Run lint check
+          command: npm run lint
+      - run:
+          name: Run unit tests with coverage
+          command: npm run cover
       - codecov/upload:
           file: coverage/*.json
-
+      - run:
+          name: Publish to Chromatic
+          command: npm run chromatic
+  versioning:
+    docker:
+      - image: circleci/node:16.13.0-browsers
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version kmuchau1 autoescola
 workflows:
   ci:
     jobs:
       - tests
+      - versioning:
+          filters:
+            branches:
+              ignore: master
+            tags:
+              ignore: /.*/
