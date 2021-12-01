@@ -35,7 +35,6 @@ const ProductGrid = ({ products }) => {
                     variant="link"
                     as={Link}
                     to="/servicos"
-                    color="primary"
                   >
                     Saiba mais
                   </Button>

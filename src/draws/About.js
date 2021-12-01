@@ -7,7 +7,7 @@ const SvgAbout = (props) => (
     width="1em"
     height="1em"
     viewBox="0 0 888.516 743.976"
-    aria-labelleby="aboutImgTitle"
+    aria-labelledby="aboutImgTitle"
     role="img"
     {...props}
   >
