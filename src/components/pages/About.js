@@ -57,7 +57,7 @@ const About = () => {
     <>
       <Hero image={HeroImage}>
         <Heading>
-          <h1>Auto Escola</h1>
+          <h1>Auto Escola Dogs</h1>
         </Heading>
         <BreadCrumb
           items={[{ label: "Início", link: "/" }, { label: "Sobre" }]}
