@@ -7,8 +7,11 @@ const SvgTime = (props) => (
     width="1em"
     height="1em"
     viewBox="0 0 675.67 631.947"
+    aria-labelledby="timeImgTitle"
+    role="img"
     {...props}
   >
+    <title id="timeImgTitle">Imagem de um relógio.</title>
     <path
       d="m624.592 483.458 30.31 4.737a98.985 98.985 0 0 0 20.605-42.939c-22.164 18.143-55.87 8.502-82.745 18.407a59.54 59.54 0 0 0-35.62 37.343l-14.813 15.938a99.77 99.77 0 0 0 83.411-4.593 96.372 96.372 0 0 0 19.64-14.099c-10.606-6.678-20.788-14.794-20.788-14.794Z"
       fill="#f2f2f2"
