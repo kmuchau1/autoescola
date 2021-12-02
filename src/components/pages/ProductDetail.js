@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { FaIdCard, FaHome, FaScroll } from "react-icons/fa";
 
+import ProductType from "types/ProductType";
+
 import Hero from "components/molecules/Hero";
 import Heading from "components/atoms/Heading";
 import Section from "components/molecules/Section";
@@ -35,17 +37,17 @@ const PinnedItem = styled.li`
   }
 `;
 
-const ProductDetail = () => (
+const ProductDetail = ({ product }) => (
   <>
     <Hero image={HeroImage}>
       <Heading>
-        <h1>Serviço</h1>
+        <h1>{product.title}</h1>
       </Heading>
       <BreadCrumb
         items={[
           { label: "Início", link: "/" },
           { label: "Servicos" },
-          { label: "Nome do Serviço" },
+          { label: product.title },
         ]}
       />
     </Hero>
@@ -111,5 +113,13 @@ const ProductDetail = () => (
     <Footer />
   </>
 );
+
+ProductDetail.defaultProps = {
+  products: {},
+};
+
+ProductDetail.propTypes = {
+  products: ProductType,
+};
 
 export default ProductDetail;
