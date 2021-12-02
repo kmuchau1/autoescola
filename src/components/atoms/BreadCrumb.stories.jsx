@@ -9,4 +9,4 @@ export default {
 
 const items = [{ label: "Início", link: "/" }, { label: "Sobre" }];
 
-export const usage = () => <BreadCrumb></BreadCrumb>;
+export const usage = () => <BreadCrumb items={items}></BreadCrumb>;

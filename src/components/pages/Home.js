@@ -12,7 +12,7 @@ import Section from "components/molecules/Section";
 import Footer from "components/organisms/Footer";
 import ProductGrid from "components/organisms/ProductGrid";
 import Accordion, { AccordionGroup } from "components/atoms/Accordion";
-import ProductType from "types/ProductType";
+import ProductType from "models/types/ProductType";
 
 import HeroImage from "assets/hero.jpg";
 import AboutVideo from "assets/about.mp4";
