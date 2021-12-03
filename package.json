@@ -1,6 +1,6 @@
 {
   "name": "autoescola",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
     "@storybook/addon-actions": "^6.3.12",
@@ -17,6 +17,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "chromatic": "^6.0.6",
+    "faker": "^5.5.3",
     "jest-styled-components": "^7.0.8",
     "prettier": "^2.5.0",
     "prop-types": "^15.7.2",
@@ -63,7 +64,7 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.js",
-      "!src/**/*.stories.js",
+      "!src/**/*.stories.jsx",
       "!src/reportWebVitals.js",
       "!src/index.js"
     ]

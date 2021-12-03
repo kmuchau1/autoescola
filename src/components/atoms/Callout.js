@@ -7,10 +7,13 @@ import { breakAt, BreakpointSizes } from "styles/Breakpoints";
 //#region CalloutBody
 
 const StyledCalloutBody = styled.div`
-  flex: 1, h6, p {
+  flex: 1;
+  h6,
+  p {
     margin: 0 0 8px;
   }
 `;
+
 export const CalloutBody = ({ children }) => (
   <StyledCalloutBody>{children}</StyledCalloutBody>
 );
@@ -18,16 +21,19 @@ export const CalloutBody = ({ children }) => (
 CalloutBody.defaultProps = {
   children: undefined,
 };
+
 CalloutBody.propTypes = {
   children: PropTypes.node,
 };
 
 //#endregion
 
-//#region CallouActions
+//#region CalloutActions
+
 const StyledCalloutActions = styled.div`
-  margin-top: 8px;
+  padding-top: 8px;
 `;
+
 export const CalloutActions = ({ children }) => (
   <StyledCalloutActions>{children}</StyledCalloutActions>
 );
@@ -35,20 +41,21 @@ export const CalloutActions = ({ children }) => (
 CalloutActions.defaultProps = {
   children: undefined,
 };
+
 CalloutActions.propTypes = {
   children: PropTypes.node,
 };
+
 //#endregion
 
 //#region CalloutMedia
+
 const StyledCalloutMedia = styled.div`
   width: 30%;
   display: none;
-
   ${breakAt(BreakpointSizes.md)} {
     display: flex;
   }
-
   svg {
     fill: ${(props) => props.theme.colors.primary.main};
     height: 100%;
@@ -64,6 +71,7 @@ export const CalloutMedia = ({ children }) => (
 CalloutMedia.defaultProps = {
   children: undefined,
 };
+
 CalloutMedia.propTypes = {
   children: PropTypes.node,
 };

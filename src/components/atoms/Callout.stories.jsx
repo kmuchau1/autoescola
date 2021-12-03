@@ -6,7 +6,7 @@ import Button from "components/atoms/Button";
 import TimeImage from "draws/Time";
 
 export default {
-  title: "Components/Atoms/Callout/",
+  title: "Components/Atoms/Callout",
   component: Callout,
   subcomponents: { CalloutBody, CalloutActions, CalloutMedia },
 };
@@ -16,13 +16,13 @@ export const usage = () => (
     <CalloutBody>
       <h6>Faça sua matrícula agora mesmo</h6>
       <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-        laudantium minus, adipisci maxime voluptatum est quos voluptatibus
-        consequatur tempore optio repellat at facilis. Maiores consequatur saepe
-        cumque nihil ducimus asperiores.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quidem
+        vel perferendis et a, porro atque officia aliquid voluptate recusandae,
+        corporis obcaecati delectus aut repellendus, doloribus aspernatur
+        libero? Quasi, consequuntur?
       </p>
       <CalloutActions>
-        <Button color="primary">Matrícula</Button>
+        <Button color="primary">Matricular</Button>
       </CalloutActions>
     </CalloutBody>
     <CalloutMedia>
