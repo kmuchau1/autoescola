@@ -4,7 +4,7 @@ import ProductDetail from "./ProductDetail";
 import { buildProduct } from "models/builders/products";
 
 export default {
-  title: "Components/Pages/ProductDetail/",
+  title: "Components/Pages/ProductDetail",
   component: ProductDetail,
 };
 
